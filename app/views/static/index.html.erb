@@ -1,0 +1,27 @@
+<h1 class="text-center margin-header">Welcome to the Gossip Project</h1>
+<h4 class="text-center margin-header-bis">List of all gossips:</h4>
+<% @gossips.each.with_index(1) do |gossip, index| %>
+	<% if index % 2 != 0 %>
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title">Gossip n°<%= index %> - by <i><%= gossip.author %></i></h5>
+					<p class="card-text">"<%= gossip.content %>"</p>
+					<a href="/gossips/<%= index %>" class="btn btn-primary">Show more</a>
+				</div>
+			</div>
+		</div>
+	<% else %>
+		<div class="col-sm-6">
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title">Gossip n°<%= index %> - by <i><%= gossip.author %></i></h5>
+					<p class="card-text">"<%= gossip.content %>"</p>
+					<a href="/gossips/<%= index %>" class="btn btn-primary">Show more</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<% end %>
+<% end %>
