@@ -1,6 +1,7 @@
 # Database with Rails - PostGreSQL - The Gossip Project
 
 This work was done as a project for [The Hacking Project Bootcamp](https://www.thehackingproject.org/).
+
 [Click here](https://active-record-gossip-project.herokuapp.com/) to check the live version of the app.
 The goal was to learn the basics of the Database with Rails and build an SQL database of a Gossip Project app with the main functionalities of the app using PostGreSQL and then deploy it on Heroku.
 
